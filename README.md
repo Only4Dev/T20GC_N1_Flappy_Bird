@@ -4,6 +4,16 @@ My first completed game created as part of the **20 Games Challenge**.
 
 This project was developed in **Unity 6** using **C#** and the **New Input System**.
 
+## Screenshots
+
+### Gameplay
+
+![Gameplay](Screenshots/gameplay.png)
+
+### Game Over
+
+![Game Over](Screenshots/gameover.png)
+
 ---
 
 ##  Features
