@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float impulseForce = 5f;
     [SerializeField] float maxFallSpeed = -10f;
 
-    [SerializeField] InputActionAsset InputActions;
+    [SerializeField] InputActionAsset inputActions;
     [SerializeField] InputAction jumpAction;
 
     Rigidbody2D rigidbody2D;
@@ -24,10 +24,9 @@ public class Player : MonoBehaviour
         InputActions.FindActionMap("Player").Disable();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        jumpAction = InputSystem.actions.FindAction("Jump");
+        jumpAction = inputActions.FindAction("Jump");
 
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
